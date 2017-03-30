@@ -163,45 +163,6 @@
     </param>
   </block>
   <block>
-    <key>Kteste_contador_py_ii</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(808, 336)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>Kteste_contador_py_ii_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_file_sink</key>
     <param>
       <key>append</key>
@@ -225,7 +186,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/kristtopher/Área de Trabalho/algumacoisa.pcap</value>
+      <value>/tmp/algumacoisa.pcap</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -514,6 +475,10 @@
       <key>samplehistory</key>
       <value>64</value>
     </param>
+    <param>
+      <key>cb</key>
+      <value>drop</value>
+    </param>
   </block>
   <block>
     <key>es_trigger_sample_timer</key>
@@ -691,14 +656,6 @@
       <value></value>
     </param>
     <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>debug</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>_enabled</key>
       <value>True</value>
     </param>
@@ -713,6 +670,14 @@
     <param>
       <key>id</key>
       <value>ieee802_15_4_mac_0</value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>debug</key>
+      <value>True</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -808,15 +773,7 @@
       <value></value>
     </param>
     <param>
-      <key>bc_channels</key>
-      <value>[129]</value>
-    </param>
-    <param>
       <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
       <value></value>
     </param>
     <param>
@@ -834,6 +791,14 @@
     <param>
       <key>id</key>
       <value>ieee802_15_4_rime_stack_0</value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>bc_channels</key>
+      <value>[129]</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -3148,12 +3113,6 @@
     </param>
   </block>
   <connection>
-    <source_block_id>Kteste_contador_py_ii_0</source_block_id>
-    <sink_block_id>blocks_file_sink_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_null_source_0</source_block_id>
     <sink_block_id>traffic_generator_Traffic_Generator_Random_0</sink_block_id>
     <source_key>0</source_key>
@@ -3209,7 +3168,7 @@
   </connection>
   <connection>
     <source_block_id>foo_wireshark_connector_0</source_block_id>
-    <sink_block_id>Kteste_contador_py_ii_0</sink_block_id>
+    <sink_block_id>blocks_file_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
