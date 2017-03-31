@@ -1599,7 +1599,7 @@
     </param>
     <param>
       <key>sd_spec0</key>
-      <value>A: 0 B: 0</value>
+      <value>A B</value>
     </param>
     <param>
       <key>time_source0</key>
@@ -2934,7 +2934,7 @@
     </param>
     <param>
       <key>sd_spec0</key>
-      <value> A: 0 B: 0</value>
+      <value> A B</value>
     </param>
     <param>
       <key>time_source0</key>
